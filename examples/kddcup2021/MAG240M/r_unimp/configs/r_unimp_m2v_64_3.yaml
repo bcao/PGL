@@ -1,12 +1,12 @@
 # configs
-data_dir: "dataset_path"
+data_dir: "/data/ogb"
 samples: "25-15"
 seed: 43
-num_workers: 3
+num_workers: 10
 batch_size: 1024
 
 # valid_data
-valid_path: "./valid_64"
+valid_path: "/data/ogb/mag240m_kddcup2021/valid_64"
 valid_name: "valid_3.npy"
 test_name: "test_3"
 
@@ -30,7 +30,7 @@ model:
 
 # trainer
 output_path: "./output/model_64_valid_3"
-epochs: 100
+epochs: 2
 eval_step: 0
 eval_per_steps: 1
 eval_max_steps: 50000

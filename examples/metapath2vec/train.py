@@ -84,7 +84,7 @@ def train(config, model, loader, optim):
         log.info("Epoch: %s | Saving model in %s" % (epoch, save_files))
         paddle.save(model.state_dict(), save_files)
 
-    #  save_embedding(model, config.save_dir)
+    save_embedding(model, config.save_dir)
 
 
 def main(config, ip_list_file):

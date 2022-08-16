@@ -254,7 +254,7 @@ class MAG240M(object):
             print(f'year feature Done! [{time.perf_counter() - t:.2f}s]')
                 
 if __name__ == "__main__":
-    root = 'dataset_path'
+    root = '/data/ogb'
     print(root)
     dataset = MAG240M(root)
     dataset.prepare_data()

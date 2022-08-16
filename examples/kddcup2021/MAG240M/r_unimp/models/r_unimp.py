@@ -57,7 +57,7 @@ class GNNModel(nn.Layer):
         if 'm2v_dim' in kwargs:
             self.m2v_dim = kwargs['m2v_dim']
         else:
-            self.m2v_dim = 128
+            self.m2v_dim = 64
         self.m2v_fc = linear_init(self.m2v_dim, input_size, init_type='linear')
 
 

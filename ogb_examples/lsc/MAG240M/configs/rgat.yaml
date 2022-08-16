@@ -1,6 +1,6 @@
 # configuration
 
-data_dir: "./lsc/dataset/"
+data_dir: "/data/ogb"
 samples: "25-15"
 num_workers: 2
 batch_size: 1024 
@@ -13,7 +13,7 @@ model:
     num_layers: 2
     feat_drop: 0
     attn_drop: 0
-    num_heads: 4
+    num_heads: 2
     hidden_size: 1024
     activation: False
     drop: 0.5

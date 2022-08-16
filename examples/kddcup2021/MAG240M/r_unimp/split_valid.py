@@ -23,6 +23,6 @@ def create_split_dir(source_dir, split_dir):
 
 
 if __name__ == "__main__":
-    source_data_dir = 'your_source_data_dir'
-    split_data_dir = 'your_split_data_dir'
+    source_data_dir = '/data/ogb'
+    split_data_dir = '/data/ogb/valid_64'
     create_split_dir(source_dir=source_data_dir, split_dir=split_data_dir)
